@@ -1,17 +1,16 @@
 <template>
-    <div id="firstLevel" style="background-color: antiquewhite;">
+    <div id="firstLevel" style="background-color: antiquewhite; height: 70vh;" class="m-3">
         This is first level
         <componentB />
     </div>
 </template>
 
 <script>
-// import component_B from "./components/componentB.vue";
-import componentB from "./componentB.vue"
+import componentB from "./componentB.vue";
 
     export default {
         name: 'component_A',
-        component: {
+        components: {
             componentB,
         }
     }

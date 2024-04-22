@@ -1,5 +1,5 @@
 <template>
-    <div id="secondLevel" style="background-color: burlywood">
+    <div id="secondLevel" style="background-color: burlywood; height: 40vh;" class="m-3">
         This is Second level
         <component_C />
     </div>
@@ -12,6 +12,8 @@ import component_C from "./componentC.vue"
 
 export default {
     name: 'componentB',
-    component_C,
+    components: {
+        component_C
+    }
 }
 </script>
